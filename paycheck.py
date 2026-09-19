@@ -15,15 +15,15 @@ hourly_rate = float(input("Hourly rate: "))
 tax_rate = float(input("Tax rate: "))
 
 
-# Hours worked and the hourly rate can have a fraction in them, like 37.5
-# hours or 10.25 hours. Use float() for all three numbers, not int().
-# int("37.5") crashes.
-#
 # Then calculate:
 #   gross pay     = hours worked * hourly rate
+gross_pay = hours_worked * hourly_rate
 #   tax withheld  = gross pay * (tax rate / 100)
+tax_withheld = gross_pay * (tax_rate / 100)
 #   net pay       = gross pay - tax withheld
-#
+net_pay = gross_pay - tax_withheld
+
+
 # Then print the four required output lines.
 # The exact format is in README.md. Match it exactly or the tests will fail.
 #
